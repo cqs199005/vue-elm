@@ -12,7 +12,7 @@ export default new Router({
   routes: [
     { path:'/',redirect:'/goods'},
     { path:'/seller',component:seller },
-    { path:'/goods',component:resolve => require(['@/components/ratings/ratings.vue'],resolve) },
+    { path:'/goods',component: resolve => require(['@/components/goods/goods.vue'],resolve) },
     { path:'/ratings',component: resolve => require(['@/components/ratings/ratings.vue'],resolve) },
   ],
   linkActiveClass:"active"
